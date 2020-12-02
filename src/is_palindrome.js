@@ -1,5 +1,6 @@
-const isPalindrome = function(text) {
+const isPalindrome = function (text) {
 
 };
 
 module.exports = isPalindrome;
+
