@@ -1,6 +1,6 @@
 {
-  "name": "anagram",
-  "version": "1.1.0",
+  "name": "js-testing",
+  "version": "1.2.0",
   "description": "A Testing exercise in JavaScript adapted from Exercism http://exercism.io/exercises/javascript/anagram/readme",
   "main": "anagram.js",
   "scripts": {
@@ -28,6 +28,6 @@
   "homepage": "https://github.com/AdaGold/JS-Testing#readme",
   "devDependencies": {},
   "dependencies": {
-    "jest": "^25.1.0"
+    "jest": "^26.6.3"
   }
 }
