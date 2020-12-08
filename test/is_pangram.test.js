@@ -20,7 +20,7 @@ describe('isPangram()', () => {
 
   test('works with "abcdefghijklmnopqrstuvwxyz"', () => {
     // Arrange
-    const text = 'abcdefghijklmnopqrstuvwxyz'
+    const text = 'aBcDefghijklmnopqrstuvwxyz';
 
     // Act - where the function/method is called on
     const result = isPangram(text);
@@ -30,9 +30,9 @@ describe('isPangram()', () => {
 
   });
 
-  test.skip("missing character 'x'", () => {
+  test("missing character 'x'", () => {
     // Arrange
-    const text = 'abcdefghijklmnopqrstuvwyz'
+    const text = 'abcdefghijklmnopqrstuvwyz';
 
     // Act
     const result = isPangram(text);
@@ -42,9 +42,9 @@ describe('isPangram()', () => {
 
   });
 
-  test.skip('empty sentence', () => {
+  test('empty sentence', () => {
     // Arrange
-    const text = ''
+    const text = '';
 
     // Act
 
@@ -55,19 +55,25 @@ describe('isPangram()', () => {
 
   test('pangram with underscores instead of spaces works', () => {
     // Arrange
+    const text = 'the_quick_brown_fox_jumps_over_the_lazy_dog';
 
     // Act
 
     // Assert
+    expect(isPangram(text)).toBeTruthy();
 
   });
 
   test('pangram with numbers', () => {
     // Arrange
+    const text = 'abcdefghijklmnopqrstuvwxyz123';
 
     // Act
 
+    result = isPangram(text);
+
     // Assert
+    expect(result).toEqual(true);
 
   });
 
