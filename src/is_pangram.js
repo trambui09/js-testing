@@ -7,12 +7,15 @@ const isPangram = function(text) {
 
   // loop through the text and populate the hash
   for (let char of str) {
-    if (hash[char]) { // key is in hash object, increment v
-      hash[char] += 1;
+    // if (hash[char]) { // key is in hash object, increment v
+    //   hash[char] += 1;
 
-    } else {
-      hash[char] = 1;
-    }
+    // } else {
+    //   hash[char] = 1;
+    // }
+
+    // ternary 
+    hash[char] ? hash[char] += 1 : hash[char] = 1
   }
   // check if the hash has 26 keys?
 
