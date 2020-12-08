@@ -78,4 +78,15 @@ describe('isPangram()', () => {
   });
 
   // Write your own test case
+
+  test('pangram with a mix of capital and lower case letters', () => {
+    // Arrange
+    const text = 'the_quIck_brown_FOX_jumps_over_the_lazy_dog'
+
+    // Act 
+
+    // Assert
+    expect(isPangram(text)).toEqual(true);
+
+  });
 });
