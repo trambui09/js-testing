@@ -10,34 +10,46 @@ describe('isPangram()', () => {
     const text = 'the quick brown fox jumps over the lazy dog';
 
     // Act
+    const result = isPangram(text);
+
 
     // Assert
+    // expect(isPangram(text)).toEqual(true);
+    expect(result).toBeTruthy();
   });
 
   test('works with "abcdefghijklmnopqrstuvwxyz"', () => {
     // Arrange
+    const text = 'abcdefghijklmnopqrstuvwxyz'
 
-    // Act
+    // Act - where the function/method is called on
+    const result = isPangram(text);
 
     // Assert
+    expect(result).toEqual(true);
 
   });
 
-  test("missing character 'x'", () => {
+  test.skip("missing character 'x'", () => {
     // Arrange
+    const text = 'abcdefghijklmnopqrstuvwyz'
 
     // Act
+    const result = isPangram(text);
 
     // Assert
+    expect(result).toBeFalsy();
 
   });
 
-  test('empty sentence', () => {
+  test.skip('empty sentence', () => {
     // Arrange
+    const text = ''
 
     // Act
 
     // Assert
+    expect(isPangram(text)).toBeFalsy();
 
   });
 

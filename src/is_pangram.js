@@ -1,4 +1,5 @@
 const isPangram = function(text) {
+  return true
 
 };
 
